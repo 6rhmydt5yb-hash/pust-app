@@ -1,0 +1,9 @@
+{
+  "name": "pust",
+  "private": true,
+  "type": "module",
+  "description": "Pust - PWA for pustestopp-trening (apnoe). Ingen avhengigheter; tester kjores med Nodes innebygde testloper (node --test).",
+  "scripts": {
+    "test": "node --test tests/*.test.js"
+  }
+}
