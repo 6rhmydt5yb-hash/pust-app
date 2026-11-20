@@ -47,7 +47,7 @@ export async function mount(root, ctx) {
                   <td>${i + 1}</td>
                   <td><input type="number" min="0" class="edit-hold" data-i="${i}" value="${r.hold}" style="width:64px;" /></td>
                   <td><input type="number" min="0" class="edit-rest" data-i="${i}" value="${r.rest}" style="width:64px;" /></td>
-                  <td><button type="button" class="btn-ghost remove-round" data-i="${i}" ${table.rounds.length <= 1 ? 'disabled' : ''}>✕</button></td>
+                  <td><button type="button" class="btn-ghost remove-round" data-i="${i}" aria-label="Fjern runde ${i + 1}" ${table.rounds.length <= 1 ? 'disabled' : ''}>✕</button></td>
                 </tr>
               `
                 )

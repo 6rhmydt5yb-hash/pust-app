@@ -16,7 +16,7 @@ export async function mount(root, ctx) {
         result.newPb
           ? `
         <div class="card center" style="border-color: var(--accent);">
-          <div class="icon-circle">🏆</div>
+          <div class="icon-circle" aria-hidden="true">🏆</div>
           <h1>Ny personlig rekord!</h1>
           <p>${formatClock(result.newPbSeconds)}</p>
         </div>

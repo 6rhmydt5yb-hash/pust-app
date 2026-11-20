@@ -213,6 +213,11 @@ button {
   min-height: 44px;
 }
 
+.remove-round {
+  min-width: 44px;
+  padding: 0 10px;
+}
+
 .btn-block-group {
   display: flex;
   flex-direction: column;
@@ -621,4 +626,17 @@ hr.sep {
   justify-content: center;
   font-size: 1.8rem;
   margin: 0 auto 12px auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .session-screen,
+  .btn,
+  .switch-track,
+  .switch-track::after {
+    transition: none !important;
+  }
+
+  .contraction-flash.flash {
+    animation: none !important;
+  }
 }
