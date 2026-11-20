@@ -45,8 +45,10 @@ export async function mount(root, ctx) {
           <button class="card-link" id="link-backup" type="button"><span>Sikkerhetskopi</span><span class="card-link__chevron" aria-hidden="true">›</span></button>
         </div>
 
-        <h2>Faresone</h2>
-        <button type="button" class="btn btn-danger" id="reset-all">Nullstill all data</button>
+        <div class="card">
+          <h2>Faresone</h2>
+          <button type="button" class="btn btn-danger" id="reset-all">Nullstill all data</button>
+        </div>
       </div>
     `;
 

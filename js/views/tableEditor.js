@@ -29,9 +29,11 @@ export async function mount(root, ctx) {
       <div class="stack">
         <h1>${isNew ? 'Ny egendefinert tabell' : 'Rediger tabell'}</h1>
 
-        <div class="field">
-          <label for="table-name">Navn</label>
-          <input type="text" id="table-name" value="${escapeHtml(table.name)}" placeholder="F.eks. Min tabell" />
+        <div class="card">
+          <div class="field" style="margin-bottom: 0;">
+            <label for="table-name">Navn</label>
+            <input type="text" id="table-name" value="${escapeHtml(table.name)}" placeholder="F.eks. Min tabell" />
+          </div>
         </div>
 
         <div class="card">

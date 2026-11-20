@@ -160,9 +160,11 @@ export async function mount(root, ctx) {
     if (engine.paused) {
       engine.resume();
       pauseBtn.textContent = '⏸';
+      pauseBtn.setAttribute('aria-label', 'Pause');
     } else {
       engine.pause();
       pauseBtn.textContent = '▶';
+      pauseBtn.setAttribute('aria-label', 'Fortsett');
     }
   });
 
